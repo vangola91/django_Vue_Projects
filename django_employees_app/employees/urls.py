@@ -1,0 +1,8 @@
+from django.urls import path
+
+from rest_framework import routers
+from employees.views import EmployeeViewSet
+
+router = routers.DefaultRouter()
+router.register('employees', EmployeeViewSet)
+urlpatterns = router.urls
